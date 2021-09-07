@@ -1,0 +1,14 @@
+<div class="news-container" *ngFor="let new of news">
+  <div *ngIf="new.main_image == null" class="news-image-div">
+    <img class="news-image" src="../../assets/stockpro.jpg" />
+  </div>
+  <div *ngIf="new.main_image != null"  class="news-image-div">
+  <img class="news-image" src="{{new.main_image.original_url}}" />
+</div>
+  <div class="news_desc">
+    <a href="{{new.link}}" target="_blank">
+      <h3>{{new.title}}</h3>
+    </a>
+    <p>{{new.summary}}</p>
+  </div>
+</div>

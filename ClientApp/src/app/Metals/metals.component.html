@@ -1,0 +1,36 @@
+<div id="metals-data-wrap">
+  <h1 id="metals-header">Popular Metals</h1>
+
+  <p *ngIf="!metalDatas"><em>Loading...</em></p>
+
+  <div id="metals-data" *ngFor="let metalData of metalDatas">
+    <table>
+      <thead>
+        <tr>
+          <th colspan="4">{{metalData.quoteType.shortName}}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Current Price:</strong></td>
+          <th>${{metalData.price.regularMarketPrice.fmt}}</th>
+        </tr>
+        <tr>
+          <td><strong>Open:</strong></td>
+          <th>${{metalData.summaryDetail.regularMarketOpen.fmt}}</th>
+          <td><strong>Close:</strong></td>
+          <th>${{metalData.summaryDetail.regularMarketPreviousClose.fmt}}</th>
+        </tr>
+        <tr>
+          <td><strong>52-Week High:</strong></td>
+          <th>${{metalData.summaryDetail.fiftyTwoWeekHigh.fmt}}</th>
+          <td><strong>52-Week Low:</strong></td>
+          <th>${{metalData.summaryDetail.fiftyTwoWeekLow.fmt}}</th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<!-- <p>{{metalData.summaryProfile.description}}</p> -->

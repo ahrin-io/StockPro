@@ -1,0 +1,35 @@
+<h1>{{shortName}} ({{symbol}})</h1>
+<h2>${{regMPrice}}</h2>
+<button [ngClass]="addBtn" (click)="addHome()">
+  <i class="fas fa-plus"></i> {{btnText}}
+</button>
+<chart [type]="type" [data]="data" [options]="options"></chart>
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">Key details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Exchange Name:</td><th>{{exchangeName}}</th>
+      <td>Market Cap:</td><th>${{mCap}}</th>
+    </tr>
+    <tr>
+      <td>Open:</td><th>${{open}}</th>
+      <td>Day High:</td><th>${{dHigh}}</th>
+    </tr>
+    <tr>
+      <td>Prev. Close:</td><th>${{pClose}}</th>
+      <td>Day Low:</td><th>${{dLow}}</th>
+    </tr>
+    <tr>
+      <td>Average Volume:</td><th>{{averVol}}</th>
+      <td>52 Week High:</td><th>${{f2High}}</th>
+    </tr>
+    <tr>
+      <td>Beta:</td><th>{{beta}}</th>
+      <td>52 Week Low:</td><th>${{f2Low}}</th>
+    </tr>
+  </tbody>
+</table>

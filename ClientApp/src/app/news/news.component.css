@@ -1,0 +1,36 @@
+.news-container {
+  display: inline-block;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  width: 48%;
+  height:200px;
+  overflow-y:auto;
+}
+
+.news-image-div {
+  float: left;
+  margin-right: 15px;
+}
+
+.news-image {
+  width: 120px;
+  object-fit: contain;
+  padding: 3px;
+  display: block;
+  max-height: 120px;
+  border-radius: 5px;
+}
+
+.news-desc {
+  margin-left: 20px;
+}
+
+h3 {
+  font-family: 'Dela Gothic One', cursive;
+}
+
+p {
+  font-family: 'Oswald', sans-serif;
+}

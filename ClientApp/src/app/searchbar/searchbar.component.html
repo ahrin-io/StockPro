@@ -1,0 +1,26 @@
+<div class="wrapper" (clickOutside)="showDropDown=false">
+  <!--begin form-->
+  <form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+
+    <button type="submit" [disabled]="!searchForm.valid" class="search-icon">
+      <i class="fas fa-search"></i>
+    </button>
+
+    <input class="search" id="sBox" placeholder="Search a stock" (click)="openDropDown()" type="text" formControlName="searchInput" required>
+
+  </form>
+
+  <button [disabled]="!searchForm.valid" (click)="clearInput()" class="clear-icon">
+    <i class="fas fa-times-circle clear-icon"></i>
+  </button>
+
+  <!--begin drop down-->
+  <div class="dropContainer" *ngIf="showDropDown">
+
+    <div class="list" *ngFor="let listItem of stocks" (click)="selectVal(listItem.shortname, listItem.symbol)">
+      {{listItem.shortname}} ({{listItem.symbol}})
+    </div>
+
+  </div>
+
+</div>

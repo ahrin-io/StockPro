@@ -1,0 +1,43 @@
+#metals-data-wrap {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 50px;
+  overflow: hidden;
+}
+
+td {
+  font-family: 'Dela Gothic One', cursive;
+  padding: 10px;
+}
+
+th {
+  font-family: 'Oswald', sans-serif;
+  padding: 10px;
+}
+
+thead th {
+  text-align: center;
+  font-family: 'Dela Gothic One', cursive;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  letter-spacing: 1px;
+  width: 100%;
+}
+
+#metals-data {
+  margin-top: 40px;
+  font-family: 'Oswald', sans-serif;
+  border-radius: 5px;
+  border: 1px solid grey;
+  padding: 5px;
+  margin: 10px;
+}
+
+#metals-header {
+  text-align: center;
+  font-family: 'Dela Gothic One', cursive;
+}

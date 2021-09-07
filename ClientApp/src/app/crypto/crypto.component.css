@@ -1,0 +1,31 @@
+#crypto-data-wrap {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 50px;
+  overflow: hidden;
+}
+
+#crypto-header {
+  text-align: center;
+  font-family: 'Dela Gothic One', cursive;
+}
+
+#crypto-data {
+  margin-top: 40px;
+  font-family: 'Oswald', sans-serif;
+  border-radius: 5px;
+  border: 1px solid grey;
+  padding: 5px;
+  margin: 10px;
+}
+
+.crypto-name {
+  font-family: 'Dela Gothic One', cursive;
+}
+
+#investment-header {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  text-decoration: underline;
+  font-family: 'Dela Gothic One', cursive;
+}

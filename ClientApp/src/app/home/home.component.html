@@ -1,0 +1,14 @@
+<h1>Welcome to StockPro!</h1>
+<h1 *ngIf="!showCharts">Search for a stock and add it to your home page.</h1>
+<h1 *ngIf="showCharts">Saved Quotes</h1>
+<div class="chartContainer" *ngIf="showCharts">
+  <div class="listChart" *ngFor="let ch of charts">
+    <h2>{{ch.shortName}} ({{ch.symbol}})</h2>
+    <h3>{{ch.regMPrice}}</h3>
+    <button class="removeBtn" (click)="removeQuote(ch.symbol)">
+      <i class="fas fa-minus"></i> Remove
+    </button>
+    <chart [type]="ch.type" [data]="ch.data" [options]="ch.options"></chart>
+  </div>
+
+</div>

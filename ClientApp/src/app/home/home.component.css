@@ -1,0 +1,47 @@
+/*titles*/
+h1 {
+  font-family: 'Dela Gothic One', cursive;
+  text-align:center;
+  padding:10px;
+}
+
+/*chart symbol*/
+h2 {
+  font-family: 'Dela Gothic One', cursive;
+}
+
+/*price*/
+h3 {
+  font-family: 'Oswald', sans-serif;
+}
+
+/*container for items*/
+.chartContainer {
+    width: 100%;
+    padding:10px;
+}
+
+/*style for items*/
+.listChart {
+  display: inline-block;
+  padding: 5px;
+  margin:10px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  width:48%;
+}
+
+/*button styling*/
+.removeBtn {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+}
+
+.removeBtn:hover {
+  background-color: #555;
+  color: white;
+}
